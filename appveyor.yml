@@ -11,8 +11,9 @@ install:
 #  - ps: .\appveyor-maven-proxy.ps1
 #  - mvnw.cmd --version
 
-#build_script:
+build_script:
 #  - mvnw.cmd verify
+- mvn verify
 
 on_success:
   - git status
